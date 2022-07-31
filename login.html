@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- Basic -->
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<!-- Mobile Metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<!-- Site Metas -->
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta name="author" content="" />
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<title>GRUPO NOVA PEL</title>
+    <title>GRUPO NOVA PEL</title>
 
-<!-- Estilo slide -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- Estilo slide -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-<!-- Estilo de Fonte -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500&display=swap" rel="stylesheet" />
+    <!-- Estilo de Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500&display=swap" rel="stylesheet" />
 
-<!-- Estilos divididos -->
-<link href="css/style.css" rel="stylesheet" />
-<link href="css/cabecalho.css" rel="stylesheet" />
-<link href="css/slider.css" rel="stylesheet" />
-<link href="css/welcome.css" rel="stylesheet" />
-<link href="css/servicos.css" rel="stylesheet" />
-<link href="css/security.css" rel="stylesheet" />
-<link href="css/info.css" rel="stylesheet" />
-<link href="css/rodape.css" rel="stylesheet" />
-<link href="css/login.css" rel="stylesheet" />
+    <!-- Estilos divididos -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/cabecalho.css" rel="stylesheet" />
+    <link href="css/slider.css" rel="stylesheet" />
+    <link href="css/welcome.css" rel="stylesheet" />
+    <link href="css/servicos.css" rel="stylesheet" />
+    <link href="css/security.css" rel="stylesheet" />
+    <link href="css/info.css" rel="stylesheet" />
+    <link href="css/rodape.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
 
-<!-- Estilo responsivo -->
-<link href="css/responsive.css" rel="stylesheet" />
+    <!-- Estilo responsivo -->
+    <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
 <!-- Cabeçalho -->
+
 <body>
     <header class="header_section">
         <div class="container">
@@ -65,44 +67,45 @@
             </nav>
         </div>
     </header>
-<!--Final do Cabeçalho -->
+    <!--Final do Cabeçalho -->
 
-<!-- Aba de Login -->
-    <div class="container">
-        <div class="col-md-6">
+    <!-- Aba de Login -->
+    <div class="login">
+        <div class="login_form-container">
             <h2>Página de Login</h2>
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Entrar</button>
         </div>
     </div>
-<!-- Aba de Login -->
+    <br><br>
+    <!-- Aba de Login -->
 
-<!-- Modal de Login -->
-        <div id="id01" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    <img src="images/avatar.jpg" alt="Avatar" class="avatar">
-                </div>
+    <!-- Modal de Login -->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="blog.html" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/controle_acesso.jpeg" alt="Avatar" class="avatar">
+            </div>
 
-                <div class="container">
-                    <label for="uname"><b>Usuário</b></label>
-                    <input type="text" placeholder="Digite o seu usuário" name="uname" required>
-                    <label for="psw"><b>Senha:</b></label>
-                    <input type="password" placeholder="Digite a sua Senha" name="psw" required>    
-                    <button type="submit">Login</button>
-                    <label><input type="checkbox" checked="checked" name="remember"> Lembrar me </label>
-                </div>
+            <div class="container">
+                <label for="uname"><b>Usuário</b></label>
+                <input type="text" placeholder="Digite o seu usuário" name="uname" id="usuario" required>
+                <label for="psw"><b>Senha:</b></label>
+                <input type="password" placeholder="Digite a sua Senha" name="psw" id="senha" required>
+                <button type="submit" onclick="login(); return false">Login</button>
+                <label><input type="checkbox" checked="checked" name="remember"> Lembrar me </label>
+            </div>
 
-                <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-                    <span class="psw">Esqueceu <a href="#">a sua senha?</a></span>
-                </div>
-            </form>
-        </div>
-<!-- Fim da Aba de Login -->
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                <span class="psw">Esqueceu <a href="#">a sua senha?</a></span>
+            </div>
+        </form>
+    </div>
+    <!-- Fim da Aba de Login -->
 
 
-<!-- Informações -->
+    <!-- Informações -->
     <section class="info_section layout_padding">
         <div class="container">
             <div class="row">
@@ -151,18 +154,19 @@
     </section>
 
     <!-- Final do Rodapé -->
-
+    <script type="text/javascript" src="js/login.js"></script>
     <script>
-    // Get the modal
-    var modal = document.getElementById('id01');
+        // Get the modal
+        var modal = document.getElementById('id01');
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
-    }
     </script>
 
 </body>
+
 </html>
