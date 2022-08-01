@@ -5,10 +5,9 @@ function login() {
 
 
     if (login == 'admin' && senha == 'admin') {
-        location.href = "blog.html";
         alert("Sucesso");
     } else {
-        alert('Acesso negado');
+        alert("Acesso negado");
     }
 
 
