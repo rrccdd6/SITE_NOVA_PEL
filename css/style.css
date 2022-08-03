@@ -15,10 +15,6 @@ body {
     padding-bottom: 75px;
 }
 
-
-
-
-
 .story_section {
     padding: 0 4%;
 }
@@ -70,6 +66,21 @@ body {
     width: 25px;
 }
 
+.service_detail_2 h2 {
+    margin-top: 3em;
+    text-transform: uppercase;
+    color: #0c0b09;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service_detail_2a {
+    text-transform: uppercase;
+    color: #254a93;
+    font-weight: bold;
+    display: flex;
+}
+
 .contact_form-container {
     background-image: url(../images/guards.jpg);
     background-size: cover;
@@ -111,10 +122,3 @@ body {
 .contact_section .row .col-md-6 {
     padding: 0;
 }
-
-
-
-
-
-
-
