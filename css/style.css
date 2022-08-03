@@ -66,6 +66,15 @@ body {
     width: 25px;
 }
 
+.container2 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 .service_detail_2 h2 {
     margin-top: 3em;
     text-transform: uppercase;
@@ -74,11 +83,11 @@ body {
     text-align: center;
 }
 
-.service_detail_2a {
+.a2 {
     text-transform: uppercase;
     color: #254a93;
     font-weight: bold;
-    display: flex;
+    margin-left: auto;
 }
 
 .contact_form-container {

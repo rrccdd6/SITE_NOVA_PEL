@@ -1,4 +1,3 @@
-
 .security_section {}
 
 .security_section h2 {
@@ -44,15 +43,11 @@
 }
 
 .security_section .security_img-box.i-box-1 {
-    background-image: url(../images/unimed.png);
+    background-image: url(../images/logo-unimed-rio.png);
 }
 
 .security_section .security_img-box.i-box-2 {
     background-image: url(../images/unique.png);
-}
-
-.security_section .security_img-box.i-box-3 {
-    background-image: url(../images/fundacao.png);
 }
 
 .security_section .security_img-box.i-box-4 {
@@ -60,11 +55,11 @@
 }
 
 .security_section .security_img-box.i-box-5 {
-    background-image: url(../images/marcos.png);
+    background-image: url(../images/marcos3.png);
 }
 
 .security_section .security_img-box.i-box-6 {
-    background-image: url(../images/prado.png);
+    background-image: url(../images/pradologo.jpg);
 }
 
 .security_section .security_img-box.i-box-7 {
@@ -73,6 +68,14 @@
 
 .security_section .security_img-box.i-box-8 {
     background-image: url(../images/Captura\ de\ Tela\ 2022-07-26\ às\ 22.39.09.png);
+}
+
+.security_section .security_img-box.i-box-9 {
+    background-image: url(../images/oncologo.png);
+}
+
+.security_section .security_img-box.i-box-10 {
+    background-image: url(../images/rededor.png);
 }
 
 .security_section .security_img-box a {
