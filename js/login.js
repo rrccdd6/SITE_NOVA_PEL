@@ -1,46 +1,35 @@
+// VARIÁVEIS
+
+var usuario = document.getElementById("usuario").value;
+var senha = document.getElementById("senha").value;
+var login = 'admin';
+var psw = 'admin';
+
+// FUNÇAO SUBMIT
+
 function submit_by_id() {
+
     var usuario = document.getElementById("usuario").value;
     var senha = document.getElementById("senha").value;
-    if (validation()) // Calling validation function
+
+    if (validation()) // CHAMADA DE VALIDAÇAO
     {
-        document.getElementById("formulario").submit(); //form submission
-        alert(" Usuário : " + usuario + " Senha : " + senha + " " + " Entrada permitida");
+        document.getElementById("formulario").submit();
+        alert(" Usuário : " + usuario + " Senha : " + senha + " " + " ENTRADA AUTORIZADA");
     }
 }
-// Name and Email validation Function.
+
+// VALIDAÇÃO DE USUARIO E SENHA 
+
 function validation() {
+
     var usuario = document.getElementById("usuario").value;
     var senha = document.getElementById("senha").value;
+
     if (usuario === '' || senha === '') {
-        alert("Please fill all fields...!!!!!!");
+        alert("ACESSO NEGADO");
         return false;
     } else {
         return true;
     }
-}
-//let usuario = document.getElementById(usuario).value;
-//let senha = document.getElementById(senha).value;
-
-//app.post('/add', function(req, res)) {
-//    res.send('formulario enviado');
-//    console.log('Sucesso');
-//}
-
-function login() {
-
-    if (usuario == 'admin' && senha == 'admin') {
-        console.log('Sucesso');
-
-    } else {
-        console.log("Acesso negado");
-
-    }
-
-    newFunction();
-
-    return;
-}
-
-function newFunction() {
-    localStorage.setItem(login, JSON.stringify(senha));
 }
