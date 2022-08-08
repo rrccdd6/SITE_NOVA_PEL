@@ -59,10 +59,6 @@
                         <li class="nav-item"> <a class="nav-link" href="contact.html">Contato</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="login.html">Área Restrita <span class="sr-only">(current)</span></a> </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control nav_search-input mr-sm-2 d-none" type="search" placeholder="Buscar" aria-label="Search" value="" />
-                        <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                    </form>
                 </div>
             </nav>
         </div>
@@ -81,7 +77,7 @@
                                 <h3>Área Restrita</h3>
                                 <p class="mb-4"> Área destinada aos funcionários do grupo Nova Pel</p>
                             </div>
-                            <form action="https://www.google.com.br/" method="post" id="formulario">
+                            <form action="https://www.google.com.br/" method="get" id="formulario" onsubmit="javascript:return validation(usuario.value,senha.value)">
                                 <div class="form-group first">
                                     <label for="username">Usuário</label>
                                     <input type="text" class="form-control" placeholder="Seu usuário" id="usuario">
