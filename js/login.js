@@ -36,32 +36,3 @@ function validation() {
         return true;
     }
 }
-
-var input = $("input:senha")
-
-
-
-
-/*
-
-function newFunction() {
-    localStorage.setItem(login, JSON.stringify(senha));
-}
-
-function validation() {
-
-    var usuario = document.getElementById("usuario").value;
-    var senha = document.getElementById("senha").value;
-
-    var senha = psw;
-    var usuario = login;
-
-    if (usuario != login || senha != psw) {
-        alert("ACESSO NEGADO");
-        return false;
-    } else {
-        return true;
-    }
-}
-
-*/

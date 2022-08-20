@@ -138,3 +138,68 @@
 }
 
 @media (min-width: 1200px) {}
+
+
+/*================================================================================================================================
+ FORMULARIO RESPONSIVO 
+==================================================================================================================================*/
+
+
+/* RESOLUÇÃO TABLETS 10" */
+
+@media only screen and (max-width:989px) {
+    .formulario {
+        float: none;
+        width: 80%;
+        margin: auto;
+    }
+    .formulario ul {
+        margin: 10px 0 10px 0%;
+    }
+    .formulario label {
+        width: 100%;
+        text-align: left;
+        float: none;
+        margin: 0 0 7px 0;
+        display: block;
+    }
+    .formulario label.error {
+        left: 0%;
+    }
+    .formulario input.g {
+        width: 80%;
+    }
+    .formulario input.m {
+        width: 60%;
+    }
+    .formulario input.p {
+        width: 50%;
+    }
+    .formulario input.pp {
+        width: 30%;
+    }
+    .formulario select.g {
+        width: 80%;
+    }
+    .formulario select.m {
+        width: 60%;
+    }
+    .formulario select.p {
+        width: 50%;
+    }
+    .formulario select.pp {
+        width: 30%;
+    }
+    .formulario textarea.g {
+        width: 80%;
+    }
+    .formulario textarea.m {
+        width: 60%;
+    }
+    .formulario textarea.p {
+        width: 50%;
+    }
+    .formulario textarea.pp {
+        width: 30%;
+    }
+}
