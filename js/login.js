@@ -33,6 +33,7 @@ function validation() {
         alert("ACESSO NEGADO");
         return false;
     } else {
+        window.localStorage
         return true;
     }
 }
