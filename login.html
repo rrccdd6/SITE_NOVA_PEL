@@ -73,7 +73,7 @@
                                 <h3>Área Restrita</h3>
                                 <p class="mb-4"> Área destinada aos funcionários do grupo Nova Pel</p>
                             </div>
-                            <form id="formulario" action="/painelprincipal.html">
+                            <form action="/painelprincipal.html" method="get" id="formulario" onsubmit="javascript:return validation(usuario.value,senha.value)">
                                 <div class="form-group first">
                                     <label for="username">Usuário</label>
                                     <input type="text" class="form-control" placeholder="Seu usuário" id="usuario">
@@ -85,13 +85,13 @@
 
                                 <div class="d-sm-flex mb-5 align-items-center">
                                     <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Lembrar me</span>
-                        <input type="checkbox" checked="checked"/>
-                        <div class="control__indicator"></div>
-                      </label>
+                            <input type="checkbox" checked="checked"/>
+                            <div class="control__indicator"></div>
+                            </label>
                                     <span class="ml-auto"><a href="#" class="forgot-pass">Esqueceu a senha?</a></span>
                                 </div>
 
-                                <input type="submit" value="Entrar" onclick="logar()" class="btn btn-block btn-primary">
+                                <input type="submit" value="Entrar" onclick="submit_by_id()" class="btn btn-block btn-primary">
 
                             </form>
                         </div>
@@ -162,7 +162,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/loginteste.js"></script>
+    <script src="js/login.js"></script>
 
     <script>
         // Get the modal
